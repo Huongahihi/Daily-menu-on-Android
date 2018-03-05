@@ -1,25 +1,19 @@
 package com.huongtlu.app_thuc_don;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ContentActivity extends AppCompatActivity {
+public class ThucdonActivity extends AppCompatActivity {
     ListView listView;
     ArrayList<BuaAn> arrTraicay;
     BuaAnAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_content);
+        setContentView(R.layout.activity_thucdon);
         listView=(ListView) findViewById(R.id.lvBuaan);
         arrTraicay= new ArrayList<>();
         arrTraicay.add(new BuaAn("Dâu tây","Đâu tây Đà lat",R.drawable.buasang1));
