@@ -33,12 +33,14 @@ public class BuaAnAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
-        return null;
+    public Object getItem(int i)
+    {
+        return buaan.get(i);
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId(int i)
+    {
         return 0;
     }
 
