@@ -14,7 +14,6 @@ public class ViewThucdonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewthucdon);
-
         viewPager=(ViewPager) findViewById(R.id.pager);
         adapter=new BuaAnDetail_Adapter(this,ThucdonActivity.arrTraicay);
         viewPager.setAdapter(adapter);

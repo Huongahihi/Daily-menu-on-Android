@@ -7,7 +7,7 @@ import android.view.View;
  */
 
 public class BuaAn {
-    private String name;
+    public String name;
     private String overview;
     private int image;
 

@@ -10,7 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by BEHUONG on 2/25/2018.
@@ -20,11 +22,14 @@ public class BuaAnAdapter extends BaseAdapter {
     private Context context;
     private int layout;
     private List<BuaAn> buaan;
+    private ArrayList<BuaAn> arrayList;
 
     public BuaAnAdapter(Context context, int layout, List<BuaAn> buaan) {
         this.context = context;
         this.layout = layout;
         this.buaan = buaan;
+        this.arrayList=new ArrayList<BuaAn>();
+        this.arrayList.addAll(buaan);
     }
 
     @Override
@@ -60,5 +65,23 @@ public class BuaAnAdapter extends BaseAdapter {
         imgHinh.setImageResource(traicay.getImage());
 
         return view;
+    }
+    public void filter(String charText){
+        charText=charText.toLowerCase(Locale.getDefault());
+
+        buaan.clear();
+        if(charText.length()==0){
+            buaan.addAll(arrayList);
+        }
+        else
+        {
+            for(BuaAn buaAn:arrayList){
+                if(buaAn.name.toLowerCase(Locale.getDefault()).contains(charText)){
+                    buaan.add(buaAn);
+                }
+            }
+        }
+
+        notifyDataSetChanged();
     }
 }

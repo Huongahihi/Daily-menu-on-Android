@@ -32,6 +32,7 @@ public class BuaAnDetail_Adapter extends PagerAdapter {
         return view == object;
     }
 
+
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         super.destroyItem(container, position, object);
