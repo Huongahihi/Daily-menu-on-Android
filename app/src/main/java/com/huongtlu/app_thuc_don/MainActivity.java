@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn_cb,btn_tp,btn_yt,btn_tt,btn_td,btn_ls,btn_qn,btn_cn;
+    Button btn_cb,btn_tp,btn_yt,btn_tt,btn_ls,btn_qn,btn_cn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Anhxa();
         btn_cb.setOnClickListener(this);
         btn_tp.setOnClickListener(this);
-        btn_td.setOnClickListener(this);
         btn_qn.setOnClickListener(this);
         btn_cn.setOnClickListener(this);
     }
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_tp=(Button) findViewById(R.id.btnThucpham);
         btn_yt=(Button) findViewById(R.id.btnBuaan);
         btn_tt=(Button) findViewById(R.id.btnTintuc);
-        btn_td=(Button) findViewById(R.id.btnThucdon);
         btn_ls=(Button) findViewById(R.id.btnLichSu);
         btn_qn=(Button) findViewById(R.id.btnQuanan);
         btn_cn=(Button) findViewById(R.id.btnCapnhat);
@@ -50,11 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(id==R.id.btnTintuc){
             //Gọi tơi 1 activity tin tức: Đó là load trang Vnexpress đã làm( về chủ để sức khỏe. Phải có kết nói internet
             Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("https://suckhoe.vnexpress.net/"));
-            startActivity(intent);
-        }
-        if(id==R.id.btnThucdon){
-            //Giữ nguyên
-            Intent intent=new Intent(this,ThucdonActivity.class);
             startActivity(intent);
         }
         if(id==R.id.btnLichSu){
