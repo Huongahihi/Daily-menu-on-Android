@@ -8,31 +8,37 @@
     tools:context="com.huongtlu.app_thuc_don.MonanDDActivity">
 
     <TextView
+        android:paddingTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textColor="#0f0fef"
         android:textAlignment="center"
         android:text="Sức khỏa cho bạn tỏa sáng" />
 
     <Button
+        android:paddingTop="30dp"
         android:id="@+id/btnda"
         android:textSize="24sp"
+        android:background="@drawable/banner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="Món ăn đẹp da" />
 
     <Button
+
         android:id="@+id/btnthongminh"
         android:textSize="24sp"
+        android:background="@drawable/an"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="Món ăn giúp thông minh" />
 
     <Button
         android:id="@+id/btnnangdong"
         android:textSize="24sp"
+        android:background="@drawable/sun"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="Món ăn giúp năng động" />
 </LinearLayout>
