@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".ThucdonActivity" />
         <activity android:name=".ViewThucdonActivity" />
-        <activity android:name=".Update_Activity"></activity>
+        <activity android:name=".Update_Activity" />
+        <activity android:name=".MonanDDActivity" />
+        <activity android:name=".DepdaActivity" />
+        <activity android:name=".ViewMonanddActivity"></activity>
     </application>
 
 </manifest>

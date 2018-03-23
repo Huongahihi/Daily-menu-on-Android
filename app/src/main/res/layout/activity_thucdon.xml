@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.huongtlu.app_thuc_don.ThucdonActivity">
 
-
-
     <ListView
         android:id="@+id/lvBuaan"
         android:layout_width="368dp"

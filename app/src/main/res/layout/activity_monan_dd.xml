@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huongtlu.app_thuc_don.MonanDDActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#0f0fef"
+        android:textAlignment="center"
+        android:text="Sức khỏa cho bạn tỏa sáng" />
+
+    <Button
+        android:id="@+id/btnda"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Món ăn đẹp da" />
+
+    <Button
+        android:id="@+id/btnthongminh"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Món ăn giúp thông minh" />
+
+    <Button
+        android:id="@+id/btnnangdong"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Món ăn giúp năng động" />
+</LinearLayout>
